@@ -1,74 +1,33 @@
 # Cisco Circuit Info Tool (Python + GUI)
 
-This tool automates the extraction of circuit-related information from Cisco routers using SSH. It was designed to assist with SD-WAN migrations and WAN inventory audits by providing a fast, Excel-based overview of tunnel interfaces, private subinterfaces, VRF assignments, and QoS data.
+This tool automates the extraction of circuit-related information from Cisco routers using SSH.  
+It's designed to support SD-WAN migrations and WAN inventory audits by generating a fast, Excel-based overview of:
+
+- Tunnel interfaces
+- Private subinterfaces
+- VRF assignments
+- QoS blocks
+- CDP neighbors (fallback)
+
+---
 
 ## 🔧 Features
 
-- ✅ GUI-based tool (PySide6)
-- 🔐 Secure SSH connections via Netmiko
-- 📋 Reads device IPs from an Excel file
-- 📥 Runs commands like:
-  - `show run`
-  - `show ip int brief`
-  - `show ip route vrf`
-  - `show interface description`
-  - `show cdp neighbors`
-- 📤 Outputs a clean Excel file with:
+- ✅ GUI-based tool using PySide6
+- 🔐 SSH access via Netmiko
+- 📋 Reads router IPs from Excel
+- 🧠 Intelligent parsing of tunnel, VRF, and private subinterface blocks
+- 📤 Outputs a clean Excel file:
   - One column per device
-  - Circuit descriptions and routing blocks
-- 💡 Auto-detects tunnels, VRFs, private interfaces
-- 🧠 Optional: fiber handoff hints, CDP fallback
+  - Circuit descriptions and routing layout
+- 💡 Optional: CDP-based discovery and fiber handoff hints
 
-## 🖼️ Screenshot
+---
 
-![circuitinfo-tool-screenshot](screenshot.png)
+## 📸 Screenshot
 
-## 📂 Folder Structure
+<img width="606" height="276" alt="Picture4" src="https://github.com/user-attachments/assets/760925a2-2ac1-49c4-aa95-bd914085f4ee" />
 
-├── circuitinfo19.py # Main Python script
-├── /inputs # Folder for your IP Excel list
-├── /outputs # Generated circuit Excel report
-├── requirements.txt # Python dependencies
 
-markdown
-Copy
-Edit
-
-## 📋 Requirements
-
-- Python 3.8+
-- Install dependencies:
-```bash
-pip install -r requirements.txt
-🚀 How to Use
-Run the script:
-
-bash
-Copy
-Edit
-python circuitinfo19.py
-Select your Excel file with router IPs (must have a column titled IP)
-
-Enter your SSH credentials in the popup
-
-Let it run — the output will be saved in /outputs
-
-📌 Notes
-Only the IP address is required per device; hostname is optional
-
-SSH access must be available from your machine to the routers
-
-Output Excel contains raw interface data + organized circuit descriptions
-
-📘 Example Use Case
-A network team uses this tool before an SD-WAN migration to:
-
-Discover physical and logical WAN circuits
-
-Identify VRFs and subinterfaces
-
-Create a migration inventory automatically
-
-📄 License
-This tool is intended for internal network engineering use. Feel free to fork or improve with attribution.
-
+```markdown
+![Circuit Info Tool Screenshot](circuitinfo-tool-screenshot.png)

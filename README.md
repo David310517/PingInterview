@@ -50,12 +50,12 @@ Edit
 
 - Python 3.8 or higher
 - Install dependencies:
+- pip install PySide6
+pip install netmiko
+pip install openpyxl
+pip install pandas
+pip install qdarkstyle
 
-```bash
-pip install -r requirements.txt
-yaml
-Copy
-Edit
 
 ---
 

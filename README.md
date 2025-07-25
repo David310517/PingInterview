@@ -27,7 +27,7 @@ It's designed to support SD-WAN migrations and WAN inventory audits by generatin
 ## 📸 Screenshot
 
 
-<img width="949" height="668" alt="collector" src="https://github.com/user-attachments/assets/f2731530-6142-48ab-be0d-96c229499b10" />
+
 
 ## 📂 Folder Structure
 

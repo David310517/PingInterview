@@ -25,6 +25,7 @@ It's designed to support SD-WAN migrations and WAN inventory audits by generatin
 ---
 
 ## 📸 Screenshot
+<img width="884" height="593" alt="Screenshot 2025-07-24 184010" src="https://github.com/user-attachments/assets/d3e2ef05-1f5e-4879-a7da-c7a1cbcdf984" />
 
 
 

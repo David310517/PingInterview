@@ -7,7 +7,7 @@ Network Ping Utility Script
 - Prints whether each host is reachable or unreachable
 - Logs all results with timestamps to a new file (ping_log_YYYYMMDD_HHMMSS.txt)
 
-Author: David (CCNA)
+Author: David 
 GitHub: https://github.com/David310517
 Date: July 2025
 """

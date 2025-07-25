@@ -16,7 +16,7 @@ A command-line tool to:
 1. Create `ip_list.txt` (one IP per line).
 2. Run:
    ```bash
-   python ping_utility.py
+   python Pinger.py
 Results are printed in the terminal and saved in ping_log_YYYYMMDD_HHMMSS.txt.
 
 Dependencies:
@@ -44,7 +44,7 @@ Install dependencies:
 pip install PySide6 qdarkstyle
 Run:
 
-python ping_gui.py
+python pingergui.py
 Use the GUI to select your IP list and view results.
 
 🛠️ Requirements

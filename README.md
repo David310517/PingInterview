@@ -33,7 +33,7 @@ It's designed to support SD-WAN migrations and WAN inventory audits by generatin
 ## 📂 Folder Structure
 
 .
-├── Circuitinfo19.py # Main Python script
+├── circuitinfo20.py # Main Python script
 ├── /inputs/ # Folder for input Excel IP list
 ├── /outputs/ # Folder for generated Excel report
 ├── requirements.txt # Python dependencies
